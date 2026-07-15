@@ -251,17 +251,10 @@ N 640 -140 710 -140 {lab=#net3}
 N 710 -350 710 -140 {lab=#net3}
 N 640 -350 710 -350 {lab=#net3}
 N 630 -110 640 -110 {lab=vldo}
-N 630 -90 640 -90 {lab=vfbtop}
-N 800 -190 800 -180 {lab=vfbtop}
-N 800 -260 800 -250 {lab=vldo}
-N 900 -100 900 -90 {lab=vfbtop}
-N 900 -30 900 -0 {lab=#net5}
-N 820 70 900 70 {lab=0}
-N 900 60 900 70 {lab=0}
 N 820 60 820 70 {lab=0}
 N 820 -100 820 -90 {lab=vldo}
-N 820 -90 820 -50 {lab=vldo}
-N 820 10 820 60 {lab=0}
+N 820 -30 820 -0 {lab=#net5}
+N 640 -110 640 -90 {lab=vldo}
 C {sky130_fd_pr/nfet_01v8.sym} -90 -140 0 0 {name=M1
 W=10
 L=0.5
@@ -348,14 +341,14 @@ spiceprefix=X
 }
 C {isource.sym} -260 -210 0 0 {name=I0 value=10u
 }
-C {vsource.sym} -120 -500 0 0 {name=V1 value=1.8 savecurrent=false}
+C {vsource.sym} -120 -500 0 0 {name=V1 value="1.8 ac 1" savecurrent=false}
 C {gnd.sym} -120 -430 0 0 {name=l1 lab=0}
 C {gnd.sym} 60 110 0 0 {name=l2 lab=0}
 C {vsource.sym} 180 -460 0 0 {name=V2 value=0.9 savecurrent=false}
 C {gnd.sym} 180 -400 0 0 {name=l4 lab=0}
 C {lab_pin.sym} -170 -140 0 0 {name=p1 sig_type=std_logic lab=vin1}
 C {lab_pin.sym} 180 -550 0 0 {name=p3 sig_type=std_logic lab=vin1}
-C {code_shown.sym} 260 -880 0 0 {name=s1 only_toplevel=false value="
+C {code_shown.sym} 230 -760 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .nodeset v(vldo)=1.5 v(vout1)=0.74 v(vout2)=0.89
 .op
@@ -363,15 +356,17 @@ C {code_shown.sym} 260 -880 0 0 {name=s1 only_toplevel=false value="
 run
 set color0=white
 set color1=black
-foreach ival 1u 100u 1m 3m 10m 30m 50m
+foreach ival 3m 10m 50m
   alter il $ival
   ac dec 20 1 1G
-  let t_db = vdb(vldo) - vdb(vfbtop)
-  let t_ph = 180/PI*(cph(vldo) - cph(vfbtop))
+  let psrr = vdb(vldo)
   echo ---- IL = $ival ----
-  meas ac fu when t_db=0 cross=last
-  meas ac ph_fu find t_ph when t_db=0 cross=last
+  meas ac psrr_10 find psrr at=10
+  meas ac psrr_1k find psrr at=1k
+  meas ac psrr_100k find psrr at=100k
+  meas ac psrr_1meg find psrr at=1meg
 end
+plot vdb(vldo) xlog
 .endc
 "
 }
@@ -427,13 +422,12 @@ value=300k
 footprint=1206
 device=resistor
 m=1}
-C {capa.sym} 820 -20 0 0 {name=CL
+C {capa.sym} 820 -60 0 0 {name=CL
 m=1
 value=1u
 footprint=1206
 device="ceramic capacitor"}
 C {isource.sym} 730 -20 0 0 {name=IL value=10m}
-C {lab_pin.sym} 630 -90 0 0 {name=p2 sig_type=std_logic lab=vfbtop}
 C {lab_pin.sym} 640 -20 0 1 {name=p4 sig_type=std_logic lab=vfb}
 C {sky130_fd_pr/pfet_01v8.sym} 620 -140 0 0 {name=Mp
 W=2000
@@ -449,20 +443,11 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 630 -110 0 0 {name=p9 sig_type=std_logic lab=vldo}
-C {ind.sym} 800 -220 0 0 {name=L3
-m=1
-value=1G
-footprint=1206
-device=inductor}
-C {lab_pin.sym} 800 -260 0 0 {name=p10 sig_type=std_logic lab=vldo}
-C {lab_pin.sym} 800 -180 0 0 {name=p11 sig_type=std_logic lab=vfbtop}
-C {capa.sym} 900 -60 0 0 {name=Cinj
-m=1
-value=1G
-footprint=1206
-device="ceramic capacitor"}
-C {vsource.sym} 900 30 0 0 {name=V3 value="0 ac 1" savecurrent=false}
-C {lab_pin.sym} 900 -100 0 0 {name=p12 sig_type=std_logic lab=vfbtop}
+C {lab_pin.sym} 640 -110 0 0 {name=p9 sig_type=std_logic lab=vldo}
 C {lab_pin.sym} 730 -100 0 0 {name=p13 sig_type=std_logic lab=vldo}
 C {lab_pin.sym} 350 -260 0 1 {name=p14 sig_type=std_logic lab=vldo}
+C {res.sym} 820 30 0 0 {name=Resr
+value=0.05
+footprint=1206
+device=resistor
+m=1}
