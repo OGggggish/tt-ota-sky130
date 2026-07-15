@@ -122,9 +122,9 @@ N 50 -390 50 -380 {lab=#net3}
 N 50 -380 50 -370 {lab=#net3}
 N 50 -370 50 -360 {lab=#net3}
 N 50 -360 50 -350 {lab=#net3}
-N 220 -530 220 -490 {lab=vin1}
-N 220 -540 220 -530 {lab=vin1}
-N 220 -550 220 -540 {lab=vin1}
+N 180 -530 180 -490 {lab=vin1}
+N 180 -540 180 -530 {lab=vin1}
+N 180 -550 180 -540 {lab=vin1}
 N -100 -300 -70 -300 {lab=#net3}
 N -110 -300 -100 -300 {lab=#net3}
 N -120 -300 -110 -300 {lab=#net3}
@@ -226,14 +226,12 @@ N 470 -350 470 -210 {lab=#net3}
 N 400 -40 400 70 {lab=0}
 N 310 -70 360 -70 {lab=vbias}
 N 400 -350 400 -240 {lab=#net3}
-N 350 -260 350 -140 {lab=vout2}
-N 330 -260 350 -260 {lab=vout2}
+N 330 -260 350 -260 {lab=vldo}
 N 170 -260 190 -260 {lab=vout1}
 N 250 -260 270 -260 {lab=#net4}
 N 150 70 480 70 {lab=0}
 N 210 -140 240 -140 {lab=vfb}
-N 350 -140 400 -140 {lab=vout2}
-N 220 -430 220 -400 {lab=0}
+N 180 -430 180 -400 {lab=0}
 N 400 -140 520 -140 {lab=vout2}
 N 520 -140 600 -140 {lab=vout2}
 N 480 70 640 70 {lab=0}
@@ -246,9 +244,7 @@ N 730 -100 730 -50 {lab=vldo}
 N 640 70 730 70 {lab=0}
 N 730 10 730 70 {lab=0}
 N 730 -100 820 -100 {lab=vldo}
-N 820 -100 820 -50 {lab=vldo}
 N 730 70 820 70 {lab=0}
-N 820 10 820 70 {lab=0}
 N 640 -350 640 -170 {lab=#net3}
 N 470 -350 640 -350 {lab=#net3}
 N 640 -140 710 -140 {lab=#net3}
@@ -262,6 +258,10 @@ N 900 -100 900 -90 {lab=vfbtop}
 N 900 -30 900 -0 {lab=#net5}
 N 820 70 900 70 {lab=0}
 N 900 60 900 70 {lab=0}
+N 820 60 820 70 {lab=0}
+N 820 -100 820 -90 {lab=vldo}
+N 820 -90 820 -50 {lab=vldo}
+N 820 10 820 60 {lab=0}
 C {sky130_fd_pr/nfet_01v8.sym} -90 -140 0 0 {name=M1
 W=10
 L=0.5
@@ -351,27 +351,27 @@ C {isource.sym} -260 -210 0 0 {name=I0 value=10u
 C {vsource.sym} -120 -500 0 0 {name=V1 value=1.8 savecurrent=false}
 C {gnd.sym} -120 -430 0 0 {name=l1 lab=0}
 C {gnd.sym} 60 110 0 0 {name=l2 lab=0}
-C {vsource.sym} 220 -460 0 0 {name=V2 value=0.9 savecurrent=false}
-C {gnd.sym} 220 -400 0 0 {name=l4 lab=0}
+C {vsource.sym} 180 -460 0 0 {name=V2 value=0.9 savecurrent=false}
+C {gnd.sym} 180 -400 0 0 {name=l4 lab=0}
 C {lab_pin.sym} -170 -140 0 0 {name=p1 sig_type=std_logic lab=vin1}
-C {lab_pin.sym} 220 -550 0 0 {name=p3 sig_type=std_logic lab=vin1}
-C {code_shown.sym} -360 -860 0 0 {name=s1 only_toplevel=false value="
+C {lab_pin.sym} 180 -550 0 0 {name=p3 sig_type=std_logic lab=vin1}
+C {code_shown.sym} 260 -880 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .nodeset v(vldo)=1.5 v(vout1)=0.74 v(vout2)=0.89
 .op
-.ac dec 20 1 1G
 .control
 run
 set color0=white
 set color1=black
-setplot ac1
-let t_db = vdb(vldo) - vdb(vfbtop)
-let t_ph = 180/PI*(cph(vldo) - cph(vfbtop))
-meas ac fu when t_db=0
-meas ac ph_fu find t_ph when t_db=0
-let pm = 180 + ph_fu
-print fu pm
-plot t_db t_ph xlog
+foreach ival 1u 100u 1m 3m 10m 30m 50m
+  alter il $ival
+  ac dec 20 1 1G
+  let t_db = vdb(vldo) - vdb(vfbtop)
+  let t_ph = 180/PI*(cph(vldo) - cph(vfbtop))
+  echo ---- IL = $ival ----
+  meas ac fu when t_db=0 cross=last
+  meas ac ph_fu find t_ph when t_db=0 cross=last
+end
 .endc
 "
 }
@@ -403,7 +403,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 400 -130 0 0 {name=p5 sig_type=std_logic lab=vout2}
+C {lab_pin.sym} 400 -140 0 0 {name=p5 sig_type=std_logic lab=vout2}
 C {lab_pin.sym} 170 -210 0 0 {name=p6 sig_type=std_logic lab=vout1}
 C {lab_pin.sym} 310 -70 0 0 {name=p7 sig_type=std_logic lab=vbias}
 C {lab_pin.sym} -260 -70 0 0 {name=p8 sig_type=std_logic lab=vbias}
@@ -413,7 +413,7 @@ value=2p
 footprint=1206
 device="ceramic capacitor"}
 C {res.sym} 300 -260 3 1 {name=RZ
-value=3.3k
+value=10
 footprint=1206
 device=resistor
 m=1}
@@ -465,3 +465,4 @@ device="ceramic capacitor"}
 C {vsource.sym} 900 30 0 0 {name=V3 value="0 ac 1" savecurrent=false}
 C {lab_pin.sym} 900 -100 0 0 {name=p12 sig_type=std_logic lab=vfbtop}
 C {lab_pin.sym} 730 -100 0 0 {name=p13 sig_type=std_logic lab=vldo}
+C {lab_pin.sym} 350 -260 0 1 {name=p14 sig_type=std_logic lab=vldo}
