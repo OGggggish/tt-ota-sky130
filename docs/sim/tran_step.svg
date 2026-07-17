@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; font-family: Helvetica;
+ font: Helvetica;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="white" stroke="none"/>
+<text stroke="none" fill="black" font-size="16" x="358" y="752">
+time
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="16">
+tran1: ** sch_path: /foss/designs/ldo_project/ldo_tran.sch
+</text>
+<path stroke="black" d="M50 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="35" y="728">
+0.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M152 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="132" y="728">
+10.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M254 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="234" y="728">
+20.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M356 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="336" y="728">
+30.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M458 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="438" y="728">
+40.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M560 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="540" y="728">
+50.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M662 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="642" y="728">
+60.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M764 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="744" y="728">
+70.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M866 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="846" y="728">
+80.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M968 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="948" y="728">
+90.0
+</text>
+<text stroke="none" fill="black" font-size="16" x="614" y="752">
+us
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 704l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="712">
+0.5
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 655l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="663">
+0.6
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 606l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="614">
+0.7
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 557l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="565">
+0.8
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 508l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="516">
+0.9
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 459l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="467">
+1.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 410l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="418">
+1.1
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 361l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="369">
+1.2
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 312l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="320">
+1.3
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 263l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="271">
+1.4
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 214l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="222">
+1.5
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 165l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="173">
+1.6
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 116l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="124">
+1.7
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M50 67l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="75">
+1.8
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="32">
+V
+</text>
+<path stroke="red" d="M459 23l45 0"/>
+<text stroke="none" fill="black" font-size="16" x="514" y="32">
+v(vldo)
+</text>
+<path stroke="red" d="M50 213l51 0M101 374l0 -161M101 374l1 23M102 607l0 -210M102 607l1 5M103 645l0 -53 1 -8 0 -150 1 -8 0 -129 1 -6 0 -65 1 -1 0 -10 1 0 0 -1 199 0 0 -46 1 -5 0 -58 1 -2 0 -24M309 80l1 0M310 88l0 -8M310 88l1 0M311 108l0 -20M311 108l1 2"/>
+<path stroke="red" d="M312 170l0 -60M312 170l1 4M313 214l0 -40M313 214l1 1M314 218l0 -3M314 217l1 -1 0 -3 194 0M509 374l0 -161M509 374l1 23M510 607l0 -210M510 607l1 5M511 645l0 -53 1 -8 0 -150 1 -8 0 -129 1 -6 0 -65 1 -1 0 -10 1 0 0 -1 199 0"/>
+<path stroke="red" d="M715 214l0 -46 1 -5 0 -58 1 -2 0 -24M717 80l1 0M718 88l0 -8M718 88l1 0M719 108l0 -20M719 108l1 2M720 170l0 -60M720 170l1 4M721 214l0 -40M721 214l1 1M722 218l0 -3M722 217l1 -1 0 -3 194 0M917 374l0 -161M917 374l1 23M918 607l0 -210"/>
+<path stroke="red" d="M918 607l1 5M919 645l0 -53 1 -8 0 -150 1 -8 0 -129 1 -6 0 -65 1 -1 0 -10 1 0 0 -1 44 0"/>
+</svg>

@@ -246,9 +246,6 @@ N 820 -100 820 -50 {lab=vldo}
 N 820 10 820 70 {lab=0}
 N 350 -260 350 -140 {lab=vout2}
 N 350 -140 400 -140 {lab=vout2}
-N 1010 -30 1010 -10 {lab=#net5}
-N 1010 -100 1010 -90 {lab=vfbtop}
-N 1010 50 1010 70 {lab=0}
 N 520 -140 600 -140 {lab=vgate}
 N 520 -140 520 -120 {lab=vgate}
 N 520 -90 570 -90 {lab=0}
@@ -268,10 +265,12 @@ N 480 -90 480 -30 {lab=nx}
 N 480 30 480 70 {lab=0}
 N 600 -220 600 -140 {lab=vgate}
 N 600 -350 600 -280 {lab=#net3}
-N 820 70 1010 70 {lab=0}
 N 820 -100 910 -100 {lab=vldo}
 N 910 -100 910 -50 {lab=vldo}
 N 910 10 910 70 {lab=0}
+N 820 70 910 70 {lab=0}
+N 640 -110 640 -90 {lab=vldo}
+N 640 -100 730 -100 {lab=vldo}
 C {sky130_fd_pr/nfet_01v8.sym} -90 -140 0 0 {name=M1
 W=10
 L=0.5
@@ -365,14 +364,20 @@ C {vsource.sym} 180 -460 0 0 {name=V2 value=0.9 savecurrent=false}
 C {gnd.sym} 180 -400 0 0 {name=l4 lab=0}
 C {lab_pin.sym} -170 -140 0 0 {name=p1 sig_type=std_logic lab=vin1}
 C {lab_pin.sym} 180 -550 0 0 {name=p3 sig_type=std_logic lab=vin1}
-C {code_shown.sym} 240 -600 0 0 {name=s1 only_toplevel=false value="
+C {code_shown.sym} 230 -680 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.nodeset v(vldo)=1.5 v(vout1)=0.71 v(vout2)=0.66 v(vgate)=1.06 v(nx)=0.68
-.op
+.nodeset v(vldo)=1.501 v(vout1)=0.71 v(vout2)=0.473 v(vgate)=0.890 v(nx)=0.68
+.tran 5n 90u
 .control
 run
-print v(vldo) v(vfb) v(vout1) v(vout2) v(vgate) v(nx)
-show m > /foss/designs/ldo_project/mos_op_final_100u.txt
+set hcopydevtype=svg
+set color0=white
+set color1=black
+plot v(vldo)
+hardcopy tran_step_3m.svg v(vldo)
+meas tran vmin min v(vldo) from=4u to=90u
+meas tran vmax max v(vldo) from=4u to=90u
+meas tran vavg avg v(vldo) from=76u to=84u
 .endc
 "
 }
@@ -433,7 +438,7 @@ m=1
 value=100p
 footprint=1206
 device="ceramic capacitor"}
-C {isource.sym} 730 -20 0 0 {name=IL value=100u}
+C {isource.sym} 730 -20 0 0 {name=IL value="pulse(100u 3m 5u 200n 200n 20u 40u)"}
 C {lab_pin.sym} 640 -20 0 1 {name=p4 sig_type=std_logic lab=vfb}
 C {sky130_fd_pr/pfet_01v8.sym} 620 -140 0 0 {name=Mp
 W=2000
@@ -449,23 +454,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 640 -110 0 0 {name=p9 sig_type=std_logic lab=vldo}
-C {lab_pin.sym} 640 -90 0 0 {name=p2 sig_type=std_logic lab=vfbtop}
-C {ind.sym} 820 -230 0 0 {name=L3
-m=1
-value=1G
-footprint=1206
-device=inductor}
-C {lab_pin.sym} 820 -260 0 0 {name=p10 sig_type=std_logic lab=vldo}
-C {lab_pin.sym} 820 -200 0 0 {name=p11 sig_type=std_logic lab=vfbtop}
-C {lab_pin.sym} 730 -100 0 0 {name=p12 sig_type=std_logic lab=vldo}
-C {capa.sym} 1010 -60 0 0 {name=Cinj
-m=1
-value=1G
-footprint=1206
-device="ceramic capacitor"}
-C {vsource.sym} 1010 20 0 0 {name=V3 value="0 ac 1" savecurrent=false}
-C {lab_pin.sym} 1010 -100 0 0 {name=p13 sig_type=std_logic lab=vfbtop}
+C {lab_pin.sym} 640 -100 0 0 {name=p9 sig_type=std_logic lab=vldo}
 C {sky130_fd_pr/nfet_01v8.sym} 500 -90 0 0 {name=Mb2
 W=100
 L=0.5
@@ -480,7 +469,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 600 -140 1 0 {name=p14 sig_type=std_logic lab=vgate}
+C {lab_pin.sym} 590 -140 1 0 {name=p14 sig_type=std_logic lab=vgate}
 C {lab_pin.sym} 500 -160 1 0 {name=p15 sig_type=std_logic lab=nx}
 C {isource.sym} 480 0 0 0 {name=I1 value=10u}
 C {isource.sym} 600 -250 0 0 {name=I2 value=200u}
