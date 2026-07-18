@@ -19,11 +19,8 @@ N 110 -150 110 -130 {lab=#net2}
 N 70 -70 130 -70 {lab=#net4}
 N 70 -10 70 30 {lab=0}
 N 20 -50 130 -50 {lab=nx}
-N 20 10 20 30 {lab=0}
 N -40 -30 130 -30 {lab=#net5}
 N -10 -110 130 -110 {lab=vgate}
-N -10 -170 30 -170 {lab=#net2}
-N 30 -170 30 -130 {lab=#net2}
 N -130 30 -40 30 {lab=0}
 N -40 30 20 30 {lab=0}
 N 20 30 70 30 {lab=0}
@@ -56,7 +53,7 @@ C {isource.sym} 70 -120 0 0 {name=I0 value=10u
 C {vsource.sym} -130 -60 0 0 {name=V1 value=1.8 savecurrent=false}
 C {gnd.sym} 110 30 0 0 {name=l2 lab=0}
 C {vsource.sym} 70 -40 0 0 {name=V2 value=0.9 savecurrent=false}
-C {code_shown.sym} -170 -600 0 0 {name=s1 only_toplevel=false value="
+C {code_shown.sym} -160 -590 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
 .temp -40
 .nodeset v(vldo)=1.5 v(x1.vfb)=0.9 v(x1.vout1)=0.70 v(x1.vout2)=0.66 v(vgate)=1.06 v(nx)=0.68
@@ -79,8 +76,6 @@ meas ac ph_fu find t_ph when t_db=0 cross=1
 meas ac floor find t_db at=800meg
 .endc
 "}
-C {isource.sym} 20 -20 0 0 {name=I1 value=10u}
-C {isource.sym} -10 -140 0 0 {name=I2 value=200u}
 C {vsource.sym} -40 0 0 0 {name=Ven value=0 savecurrent=false}
 C {capa.sym} 560 -50 0 0 {name=CL
 m=1
