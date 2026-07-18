@@ -25,7 +25,7 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "load_en (on-chip 3mA demo load enable)"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -55,9 +55,9 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
+  ua[0]: "vref (0.9V reference input)"
+  ua[1]: "ib0 (10uA bias current input)"
+  ua[2]: "vldo (LDO output sense)"
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
