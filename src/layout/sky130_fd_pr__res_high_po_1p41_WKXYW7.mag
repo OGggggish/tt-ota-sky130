@@ -1,0 +1,31 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1784449861
+<< xpolycontact >>
+rect -141 69 141 501
+rect -141 -501 141 -69
+<< ppolyres >>
+rect -141 -69 141 69
+<< viali >>
+rect -125 86 125 483
+rect -125 -483 125 -86
+<< metal1 >>
+rect -131 483 131 495
+rect -131 86 -125 483
+rect 125 86 131 483
+rect -131 74 131 86
+rect -131 -86 131 -74
+rect -131 -483 -125 -86
+rect 125 -483 131 -86
+rect -131 -495 131 -483
+<< labels >>
+rlabel xpolycontact 0 466 0 466 0 R1
+port 1 nsew
+rlabel xpolycontact 0 -466 0 -466 0 R2
+port 2 nsew
+<< properties >>
+string gencell sky130_fd_pr__res_high_po_1p41
+string library sky130
+string parameters w 1.41 l 0.85 m 1 nx 1 wmin 1.410 lmin 0.50 class resistor rho 319.8 val 469.127 dummy 0 dw 0.0 term 194.82 sterm 0.0 caplen 0 guard 0 glc 1 grc 1 gtc 1 gbc 1 compatible {sky130_fd_pr__res_high_po_0p35  sky130_fd_pr__res_high_po_0p69 sky130_fd_pr__res_high_po_1p41  sky130_fd_pr__res_high_po_2p85 sky130_fd_pr__res_high_po_5p73} snake 0 full_metal 1 wmax 1.410 n_guard 0 hv_guard 0 vias 1 viagb 0 viagt 0 viagl 0 viagr 0 doports 1
+<< end >>
