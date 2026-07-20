@@ -54,8 +54,7 @@ C {vsource.sym} -130 -60 0 0 {name=V1 value=1.8 savecurrent=false}
 C {gnd.sym} 110 30 0 0 {name=l2 lab=0}
 C {vsource.sym} 70 -40 0 0 {name=V2 value=0.9 savecurrent=false}
 C {code_shown.sym} -160 -590 0 0 {name=s1 only_toplevel=false value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
-.temp -40
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .nodeset v(vldo)=1.5 v(x1.vfb)=0.9 v(x1.vout1)=0.70 v(x1.vout2)=0.66 v(vgate)=1.06 v(nx)=0.68
 .op
 .ac dec 20 1 1G
@@ -69,7 +68,7 @@ set hcopydevtype=svg
 set color0=white
 set color1=black
 plot t_db t_ph
-hardcopy bode_chip_ff-40_100u.svg t_db t_ph
+hardcopy bode_mirror_tt_100u.svg t_db t_ph
 meas ac t0 find t_db at=1
 meas ac fu when t_db=0 cross=1
 meas ac ph_fu find t_ph when t_db=0 cross=1
@@ -85,7 +84,7 @@ device="ceramic capacitor"}
 C {isource.sym} 470 -50 0 0 {name=IL value=100u}
 C {gnd.sym} 470 40 0 0 {name=l1 lab=0}
 C {lab_wire.sym} 20 -50 0 0 {name=p2 sig_type=std_logic lab=nx}
-C {/foss/designs/ldo_project/ldo_chip.sym} 280 -70 0 0 {name=x1}
 C {lab_wire.sym} -10 -110 0 0 {name=p3 sig_type=std_logic lab=vgate}
 C {lab_wire.sym} 470 -130 0 1 {name=p1 sig_type=std_logic lab=vldo}
 C {lab_wire.sym} 490 -110 0 1 {name=p4 sig_type=std_logic lab=vfbtop}
+C {/foss/designs/ldo_project/ldo_chip.sym} 280 -70 0 0 {name=x1}

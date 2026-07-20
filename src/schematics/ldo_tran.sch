@@ -33,23 +33,25 @@ N 390 -120 390 -60 {lab=0}
 N 260 -230 300 -230 {lab=vldo}
 C {isource.sym} -100 -240 0 0 {name=I0 value=10u
 }
-C {vsource.sym} -300 -180 0 0 {name=V1 value="pulse(0 1.8 0 5u 0 1 2)" savecurrent=false}
+C {vsource.sym} -300 -180 0 0 {name=V1 value=1.8 savecurrent=false}
 C {gnd.sym} -60 -90 0 0 {name=l2 lab=0}
 C {vsource.sym} -100 -160 0 0 {name=V2 value=0.9 savecurrent=false}
-C {code_shown.sym} -340 -580 0 0 {name=s1 only_toplevel=false value="
+C {code_shown.sym} -310 -560 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.tran 50n 100u
+.tran 50n 60u
 .control
 run
 set hcopydevtype=svg
 set color0=white
 set color1=black
 plot v(vldo)
-hardcopy tran_startup_3ma_mirror_tt.svg v(vldo)
-meas tran vfinal avg v(vldo) from=90u to=100u
+hardcopy tran_step_real3ma_tt_rebin.svg v(vldo)
+meas tran vpre avg v(vldo) from=15u to=19u
+meas tran vmin min v(vldo) from=19u to=30u
+meas tran vfinal avg v(vldo) from=50u to=60u
 .endc
 "}
-C {vsource.sym} -210 -120 0 0 {name=Ven value=1.8 savecurrent=false}
+C {vsource.sym} -210 -120 0 0 {name=Ven value="pulse(0 1.8 20u 200n 200n 1 2)" savecurrent=false}
 C {capa.sym} 390 -150 0 0 {name=CL
 m=1
 value=100p
