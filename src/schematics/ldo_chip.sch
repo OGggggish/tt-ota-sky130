@@ -199,7 +199,6 @@ N 400 -140 460 -140 {lab=vout2}
 N 520 -260 570 -260 {lab=vgate}
 N 570 -260 570 -140 {lab=vgate}
 N 520 -230 570 -230 {lab=vgate}
-N 600 -220 600 -140 {lab=vgate}
 N 820 -100 910 -100 {lab=vldo}
 N 910 -100 910 -50 {lab=vldo}
 N 910 10 910 70 {lab=vss}
@@ -225,7 +224,6 @@ N -0 -420 50 -420 {lab=vdd}
 N 1020 -20 1030 -20 {lab=load_en}
 N 640 -110 640 -100 {lab=vldo}
 N -140 -350 -140 -300 {lab=vdd}
-N 600 -270 600 -220 {lab=vgate}
 N 460 -110 480 -110 {lab=nx}
 N 400 -70 470 -70 {lab=vss}
 N 460 -110 460 90 {lab=nx}
@@ -253,6 +251,7 @@ N 890 -350 890 -240 {lab=vdd}
 N 810 -350 890 -350 {lab=vdd}
 N 810 -290 860 -290 {lab=vdd}
 N 860 -350 860 -290 {lab=vdd}
+N 640 -100 640 -90 {lab=vldo}
 C {sky130_fd_pr/nfet_01v8.sym} -90 -140 0 0 {name=M1
 W=10
 L=0.5
@@ -434,10 +433,7 @@ C {ipin.sym} 60 110 0 0 {name=p2 lab=vss}
 C {ipin.sym} -170 -140 0 0 {name=p12 lab=vref}
 C {opin.sym} 770 -100 3 0 {name=p1 lab=vldo}
 C {ipin.sym} 1020 -20 0 0 {name=p3 lab=load_en}
-C {iopin.sym} 640 -90 2 0 {name=p13 lab=fbtop}
 C {ipin.sym} -260 -180 1 0 {name=p9 lab=vbias}
-C {ipin.sym} 480 -90 3 0 {name=p16 lab=nx}
-C {ipin.sym} 600 -270 1 0 {name=p15 lab=vgate}
 C {sky130_fd_pr/nfet_01v8.sym} 440 120 0 0 {name=Mb3
 W=5
 L=1
@@ -524,3 +520,4 @@ L=1.2
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}
+C {lab_pin.sym} 480 -90 3 0 {name=p13 sig_type=std_logic lab=nx}

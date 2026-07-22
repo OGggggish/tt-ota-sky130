@@ -1,0 +1,49 @@
+** sch_path: /foss/designs/ldo_project/ldo_chip.sch
+**.subckt ldo_chip vdd vgate vbias vref vldo fbtop nx load_en vss
+*.ipin vdd
+*.ipin vss
+*.ipin vref
+*.opin vldo
+*.ipin load_en
+*.ipin vbias
+XM1 net1 vref net2 vss sky130_fd_pr__nfet_01v8 L=0.5 W=10 nf=1 ad=2.9 as=2.9 pd=20.58 ps=20.58 nrd=0.029 nrs=0.029 sa=0 sb=0 sd=0
++ mult=1
+XM2 vout1 vfb net2 vss sky130_fd_pr__nfet_01v8 L=0.5 W=10 nf=1 ad=2.9 as=2.9 pd=20.58 ps=20.58 nrd=0.029 nrs=0.029 sa=0 sb=0 sd=0
++ mult=1
+XM3 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM4 vout1 net1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM5 net2 vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM6 vbias vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM7 vout2 vout1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=60 nf=1 ad=17.4 as=17.4 pd=120.58 ps=120.58 nrd=0.00483333333333333
++ nrs=0.00483333333333333 sa=0 sb=0 sd=0 mult=1
+XM8 vout2 vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=30 nf=1 ad=8.7 as=8.7 pd=60.58 ps=60.58 nrd=0.00966666666666667
++ nrs=0.00966666666666667 sa=0 sb=0 sd=0 mult=1
+XMp vldo vgate vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=2000 nf=400 ad=290 as=291.45 pd=2116 ps=2126.58 nrd=0.000145 nrs=0.000145
++ sa=0 sb=0 sd=0 mult=1
+XMb2 vgate nx vss vss sky130_fd_pr__nfet_01v8 L=0.5 W=100 nf=20 ad=14.5 as=15.95 pd=105.8 ps=116.38 nrd=0.0029 nrs=0.0029 sa=0
++ sb=0 sd=0 mult=1
+XMb1 nx vout2 vgate vgate sky130_fd_pr__pfet_01v8_lvt L=0.5 W=50 nf=10 ad=7.25 as=8.7 pd=52.9 ps=63.48 nrd=0.0058 nrs=0.0058 sa=0
++ sb=0 sd=0 mult=1
+XMsw nsw load_en vss vss sky130_fd_pr__nfet_01v8 L=0.5 W=30 nf=6 ad=4.35 as=5.8 pd=31.74 ps=42.32 nrd=0.00966666666666667
++ nrs=0.00966666666666667 sa=0 sb=0 sd=0 mult=1
+XCM1 net3 vout1 sky130_fd_pr__cap_mim_m3_1 W=20 L=25 MF=11 m=11
+XMb3 nx vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XMb4 pbias vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=10 nf=2 ad=1.45 as=2.9 pd=10.58 ps=21.16 nrd=0.029 nrs=0.029 sa=0 sb=0 sd=0
++ mult=1
+XMb5 pbias pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=25 nf=5 ad=4.35 as=4.35 pd=31.74 ps=31.74 nrd=0.0116 nrs=0.0116 sa=0 sb=0
++ sd=0 mult=1
+XMb6 vgate pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=250 nf=50 ad=36.25 as=37.7 pd=264.5 ps=275.08 nrd=0.00116 nrs=0.00116
++ sa=0 sb=0 sd=0 mult=1
+XCM2 net3 vout1 sky130_fd_pr__cap_mim_m3_1 W=20 L=25 MF=11 m=11
+XRload nsw vldo vss sky130_fd_pr__res_high_po_1p41 L=1.36 mult=1
+XRbl vss vldo vss sky130_fd_pr__res_high_po_2p85 L=12.3 mult=1
+XRf1 vfb vldo vss sky130_fd_pr__res_xhigh_po_0p35 L=35 mult=1
+XRf2 vss vfb vss sky130_fd_pr__res_xhigh_po_0p35 L=52.5 mult=1
+XRZ net3 vout2 vss sky130_fd_pr__res_high_po_0p69 L=1.2 mult=1
+**.ends
+.end
