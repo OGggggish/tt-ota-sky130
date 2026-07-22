@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1784610210
+timestamp 1784748598
+<< metal1 >>
+rect 15796 15248 17286 15282
+rect 15796 14138 17286 14172
 << metal4 >>
 rect 6134 44952 6194 45152
 rect 6686 44952 6746 45152
@@ -57,7 +60,7 @@ rect 22634 0 22814 200
 rect 26498 0 26678 200
 rect 30362 0 30542 200
 use ldo_chip  ldo_chip_0
-timestamp 1784610210
+timestamp 1784748598
 transform 1 0 0 0 1 0
 box 320 3780 31937 42800
 << labels >>
