@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/ldo_project/ldo_chip.sch
-**.subckt ldo_chip vdd vgate vbias vref vldo fbtop nx load_en vss
+**.subckt ldo_chip vdd vbias vref vldo load_en vss
 *.ipin vdd
 *.ipin vss
 *.ipin vref

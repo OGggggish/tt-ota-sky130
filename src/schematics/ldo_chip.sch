@@ -397,7 +397,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 590 -140 1 0 {name=p14 sig_type=std_logic lab=vgate}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 500 -230 0 0 {name=Mb1
 W=50
 L=0.5
@@ -493,7 +492,6 @@ spiceprefix=X
 C {lab_pin.sym} 400 120 0 0 {name=p17 sig_type=std_logic lab=vbias}
 C {lab_wire.sym} 760 -260 0 0 {name=p18 sig_type=std_logic lab=pbias}
 C {lab_wire.sym} 460 180 0 1 {name=p19 sig_type=std_logic lab=pbias}
-C {lab_pin.sym} 810 -180 3 0 {name=p20 sig_type=std_logic lab=vgate}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -230 1 0 {name=CM2 model=cap_mim_m3_1 W=20 L=25 MF=11 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_1p41.sym} 990 -100 3 0 {name=Rload
 L=1.36
@@ -521,3 +519,5 @@ model=res_high_po_0p69
 spiceprefix=X
 mult=1}
 C {lab_pin.sym} 480 -90 3 0 {name=p13 sig_type=std_logic lab=nx}
+C {lab_pin.sym} 590 -140 1 0 {name=p14 sig_type=std_logic lab=vgate}
+C {lab_pin.sym} 810 -180 3 0 {name=p15 sig_type=std_logic lab=vgate}
