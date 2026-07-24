@@ -1,0 +1,5 @@
+* LVS wrapper v3 — real pins only
+.include /foss/designs/ldo_project/ldo_chip.spice
+.subckt tt_um_ogggggish_ota_ldo ua[0] ua[1] ua[2] ui_in[0] VDPWR VGND
+Xldo VDPWR ua[1] ua[0] ua[2] ui_in[0] VGND ldo_chip
+.ends

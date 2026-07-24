@@ -426,7 +426,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {lab_pin.sym} 1070 -100 0 1 {name=p10 sig_type=std_logic lab=nsw}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -260 1 0 {name=CM1 model=cap_mim_m3_1 W=20 L=25 MF=11 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -260 3 1 {name=CM1 model=cap_mim_m3_1 W=20 L=25 MF=11 spiceprefix=X}
 C {ipin.sym} 0 -420 0 0 {name=p11 lab=vdd}
 C {ipin.sym} 60 110 0 0 {name=p2 lab=vss}
 C {ipin.sym} -170 -140 0 0 {name=p12 lab=vref}
@@ -492,7 +492,7 @@ spiceprefix=X
 C {lab_pin.sym} 400 120 0 0 {name=p17 sig_type=std_logic lab=vbias}
 C {lab_wire.sym} 760 -260 0 0 {name=p18 sig_type=std_logic lab=pbias}
 C {lab_wire.sym} 460 180 0 1 {name=p19 sig_type=std_logic lab=pbias}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -230 1 0 {name=CM2 model=cap_mim_m3_1 W=20 L=25 MF=11 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -230 3 1 {name=CM2 model=cap_mim_m3_1 W=20 L=25 MF=11 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_1p41.sym} 990 -100 3 0 {name=Rload
 L=1.36
 model=res_high_po_1p41

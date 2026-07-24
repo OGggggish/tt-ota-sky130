@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/ldo_project/ldo_chip.sch
-**.subckt ldo_chip vdd vbias vref vldo load_en vss
+.subckt ldo_chip vdd vbias vref vldo load_en vss
 *.ipin vdd
 *.ipin vss
 *.ipin vref
@@ -30,7 +30,7 @@ XMb1 nx vout2 vgate vgate sky130_fd_pr__pfet_01v8_lvt L=0.5 W=50 nf=10 ad=7.25 a
 + sb=0 sd=0 mult=1
 XMsw nsw load_en vss vss sky130_fd_pr__nfet_01v8 L=0.5 W=30 nf=6 ad=4.35 as=5.8 pd=31.74 ps=42.32 nrd=0.00966666666666667
 + nrs=0.00966666666666667 sa=0 sb=0 sd=0 mult=1
-XCM1 net3 vout1 sky130_fd_pr__cap_mim_m3_1 W=20 L=25 MF=11 m=11
+XCM1 vout1 net3 sky130_fd_pr__cap_mim_m3_1 W=20 L=25 MF=11 m=11
 XMb3 nx vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
 + mult=1
 XMb4 pbias vbias vss vss sky130_fd_pr__nfet_01v8 L=1 W=10 nf=2 ad=1.45 as=2.9 pd=10.58 ps=21.16 nrd=0.029 nrs=0.029 sa=0 sb=0 sd=0
@@ -39,11 +39,11 @@ XMb5 pbias pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=25 nf=5 ad=4.35 as=4.35
 + sd=0 mult=1
 XMb6 vgate pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=250 nf=50 ad=36.25 as=37.7 pd=264.5 ps=275.08 nrd=0.00116 nrs=0.00116
 + sa=0 sb=0 sd=0 mult=1
-XCM2 net3 vout1 sky130_fd_pr__cap_mim_m3_1 W=20 L=25 MF=11 m=11
+XCM2 vout1 net3 sky130_fd_pr__cap_mim_m3_1 W=20 L=25 MF=11 m=11
 XRload nsw vldo vss sky130_fd_pr__res_high_po_1p41 L=1.36 mult=1
 XRbl vss vldo vss sky130_fd_pr__res_high_po_2p85 L=12.3 mult=1
 XRf1 vfb vldo vss sky130_fd_pr__res_xhigh_po_0p35 L=35 mult=1
 XRf2 vss vfb vss sky130_fd_pr__res_xhigh_po_0p35 L=52.5 mult=1
 XRZ net3 vout2 vss sky130_fd_pr__res_high_po_0p69 L=1.2 mult=1
 **.ends
-.end
+.ends
