@@ -1,6 +1,6 @@
 # tt-ota-sky130 — TinyLDO
 
-A fully analog **1.5 V low-dropout regulator** on SKY130, designed for Tiny Tapeout **TTSKY26c**. Two-stage Miller OTA → super-source-follower buffer → 2 mm-wide segmented PMOS pass device, with on-chip bias generation, feedback divider, RC compensation, and a built-in switched-load demo. **16 transistors, 6 passives, zero digital gates.**
+A fully analog, **capless 1.5 V low-dropout regulator** on SKY130, designed for Tiny Tapeout **TTSKY26c**. Two-stage Miller OTA → super-source-follower buffer → 2 mm-wide segmented PMOS pass device, with on-chip bias generation, feedback divider, RC compensation, and a built-in switched-load demo. **16 transistors, 6 passives, zero digital gates.**
 
 ![TinyLDO layout — 2D preview](docs/layout_2d.png)
 *Full tile (161 × 225.76 µm). Top: 22-unit MiM compensation array. Middle: OTA, buffer and bias blocks. Bottom-left: the segmented pass device and switched-load demo. Explore it in the [interactive viewer](https://ogggggish.github.io/tt-ota-sky130/).*
@@ -23,6 +23,7 @@ All "post-layout" numbers are from the C-extracted netlist (magic PEX, ngspice-4
 | Phase margin | **59.6° / 51.8° / 70.7°** | tt 27 °C / ss 125 °C / ff −40 °C, post-layout |
 | Stability floor | ≥ 45° all corners | worst-case margin 6.8° |
 | Load-step droop | **−328 mV**, full recovery | 0.1 → ~2.8 mA, C_L = 100 pF |
+| Output capacitor | **none required (capless)** | transients quoted at ~100 pF board/probe parasitics |
 | Recovery behaviour | bottoms out ~180 ns after the step | returns to 1.5008 V |
 | Compensation | 22 × `cap_mim_m3_1` + zero-cancelling RZ | Miller, across 2nd stage |
 | Pass device | 2000 µm / 0.15 µm PMOS, two guard-ringed segments | 1200 + 800 µm in parallel |
@@ -49,7 +50,7 @@ All "post-layout" numbers are from the C-extracted netlist (magic PEX, ngspice-4
 |---|---|---|
 | `ua[0]` | in | Reference, 0.9 V |
 | `ua[1]` | in | Bias, 10 µA (≈110 kΩ from 1.8 V works) |
-| `ua[2]` | out | Regulated 1.5 V output / sense (attach C_L ≈ 100 pF) |
+| `ua[2]` | out | Regulated 1.5 V output / sense — capless, no output capacitor required |
 | `ui_in[0]` | in | Switched-load enable (~2.8 mA on-chip demo load) |
 
 `ua[3..7]` unconnected by design; all digital outputs are tied to ground internally.
