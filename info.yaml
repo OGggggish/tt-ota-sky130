@@ -2,8 +2,8 @@
 project:
   title:        "SSF Capless LDO"      # Project title
   author:       "Billy Ouyang"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "1.5V capless LDO: two-stage OTA + super source follower, on-chip 3mA demo load"      # One line description of what your project does
+  discord:      "oyyy2005"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "1.5V capless LDO: two-stage OTA + super source follower, on-chip 2.8mA demo load"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
