@@ -1,8 +1,6 @@
 <!---
-
 This file is used to generate your project datasheet. Please fill in the information below and delete any unused
 sections.
-
 You can also include images in this folder and reference them in the markdown. Each image must be less than
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
@@ -34,7 +32,7 @@ Load-step demo: driving `ui_in[0]` high turns on an on-chip switch (Msw, 30/0.5 
 | Regulation point | 1.500 V | 1.5008 V (light and heavy load) |
 | Dropout (pre-layout) | 14.8 mV @ 1.1 mA | — |
 
-All corners clear the ≥45° stability floor with ≥6.8° to spare; the layout parasitic cost is a uniform 3.0–3.6° of phase margin across corners. Droop is quoted from a 0.1 mA bench baseline; with only the µA-scale divider load the dip is slightly deeper. The layout is DRC-clean — **Tiny Tapeout precheck: 15/15 checks green** — and LVS-clean (netgen: *Circuits match uniquely*). Bode and transient plots: `sim/bode_pex_*.svg`, `sim/tran_step_pex_tt.svg`.
+All corners clear the ≥45° stability floor with ≥6.8° to spare; the layout parasitic cost is a uniform 3.0–3.6° of phase margin across corners. Droop is quoted from a 0.1 mA bench baseline; with only the µA-scale divider load the dip is slightly deeper. The layout is DRC-clean — **Tiny Tapeout precheck: 15/15 checks green** — and LVS-clean (netgen: *Circuits match uniquely*). Bode and load-step plots are shown in the repository README; the full set lives in `sim/`.
 
 ## How to test
 
