@@ -1,0 +1,657 @@
+.subckt ldo_pex_brk ua[0] ua[1] ua[2] ui_in[0] VDPWR VGND fbtop_x
+* NGSPICE file created from tt_um_ogggggish_ota_ldo.ext - technology: sky130A
+
+X0 ldo_chip_0/Msw/D4 ua[2] VGND sky130_fd_pr__res_high_po_1p41 l=1.36
+X1 ldo_chip_0/Msw/D4 ui_in[0] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X2 VGND ui_in[0] ldo_chip_0/Msw/D4 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X3 VGND ui_in[0] ldo_chip_0/Msw/D4 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X4 ldo_chip_0/Msw/D4 ui_in[0] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X5 ldo_chip_0/Msw/D4 ui_in[0] VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X6 VGND ui_in[0] ldo_chip_0/Msw/D4 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X7 ldo_chip_0/M4/G ua[0] ldo_chip_0/M5/D VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X8 ldo_chip_0/M5/D ua[0] ldo_chip_0/M4/G VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X9 ldo_chip_0/RZ/R1 ldo_chip_0/RZ/R2 VGND sky130_fd_pr__res_high_po_0p69 l=1.2
+X10 ldo_chip_0/M4/D ldo_chip_0/M2/G1 ldo_chip_0/M5/D VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=21.16 as=4.35 ps=31.74 w=5 l=0.5
+X11 ldo_chip_0/M5/D ldo_chip_0/M2/G1 ldo_chip_0/M4/D VGND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=5 l=0.5
+X12 VDPWR ldo_chip_0/M4/G ldo_chip_0/M4/G VDPWR sky130_fd_pr__pfet_01v8 ad=1.45 pd=10.58 as=1.45 ps=10.58 w=5 l=0.5
+X13 VDPWR ldo_chip_0/M4/G ldo_chip_0/M4/D VDPWR sky130_fd_pr__pfet_01v8 ad=382.20001 pd=2.51288k as=1.45 ps=10.58 w=5 l=0.5
+X14 VGND ua[1] ldo_chip_0/M5/D VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=1.45 ps=10.58 w=5 l=1
+X15 VGND ua[1] ua[1] VGND sky130_fd_pr__nfet_01v8 ad=29 pd=211.60001 as=1.45 ps=10.58 w=5 l=1
+X16 ldo_chip_0/RZ/R2 ldo_chip_0/M4/D VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X17 ldo_chip_0/RZ/R2 ldo_chip_0/M4/D VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X18 VDPWR ldo_chip_0/M4/D ldo_chip_0/RZ/R2 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X19 VDPWR ldo_chip_0/M4/D ldo_chip_0/RZ/R2 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X20 ldo_chip_0/RZ/R2 ldo_chip_0/M4/D VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X21 ldo_chip_0/RZ/R2 ldo_chip_0/M4/D VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X22 VDPWR ldo_chip_0/M4/D ldo_chip_0/RZ/R2 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X23 VDPWR ldo_chip_0/M4/D ldo_chip_0/RZ/R2 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X24 VDPWR ldo_chip_0/M4/D ldo_chip_0/RZ/R2 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X25 ldo_chip_0/RZ/R2 ldo_chip_0/M4/D VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X26 ldo_chip_0/RZ/R2 ldo_chip_0/M4/D VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X27 VDPWR ldo_chip_0/M4/D ldo_chip_0/RZ/R2 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X28 VGND ua[1] ldo_chip_0/RZ/R2 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=1
+X29 ldo_chip_0/RZ/R2 ua[1] VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=1
+X30 VGND ua[1] ldo_chip_0/RZ/R2 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=1
+X31 ldo_chip_0/RZ/R2 ua[1] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=1
+X32 VGND ua[1] ldo_chip_0/RZ/R2 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=1
+X33 ldo_chip_0/RZ/R2 ua[1] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=1
+X34 VGND ua[2] VGND sky130_fd_pr__res_high_po_2p85 l=12.3
+X35 ldo_chip_0/Mb1/B ldo_chip_0/RZ/R2 ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X36 ldo_chip_0/Mb3/D ldo_chip_0/RZ/R2 ldo_chip_0/Mb1/B ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X37 ldo_chip_0/Mb3/D ldo_chip_0/RZ/R2 ldo_chip_0/Mb1/B ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X38 ldo_chip_0/Mb1/B ldo_chip_0/RZ/R2 ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X39 ldo_chip_0/Mb1/B ldo_chip_0/RZ/R2 ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X40 ldo_chip_0/Mb3/D ldo_chip_0/RZ/R2 ldo_chip_0/Mb1/B ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X41 ldo_chip_0/Mb3/D ldo_chip_0/RZ/R2 ldo_chip_0/Mb1/B ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X42 ldo_chip_0/Mb3/D ldo_chip_0/RZ/R2 ldo_chip_0/Mb1/B ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X43 ldo_chip_0/Mb1/B ldo_chip_0/RZ/R2 ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X44 ldo_chip_0/Mb1/B ldo_chip_0/RZ/R2 ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B sky130_fd_pr__pfet_01v8_lvt ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X45 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X46 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X47 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X48 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X49 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X50 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X51 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X52 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X53 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X54 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X55 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X56 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X57 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X58 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X59 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X60 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X61 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X62 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X63 VGND ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X64 ldo_chip_0/Mb1/B ldo_chip_0/Mb3/D VGND VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X65 VGND ua[1] ldo_chip_0/Mb3/D VGND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=1.45 ps=10.58 w=5 l=1
+X66 VGND ua[1] ldo_chip_0/Mb6/G9 VGND sky130_fd_pr__nfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=1
+X67 ldo_chip_0/Mb6/G9 ua[1] VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=1
+X68 ldo_chip_0/Mb6/G9 ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X69 ldo_chip_0/Mb6/G9 ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X70 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb6/G9 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X71 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb6/G9 VDPWR sky130_fd_pr__pfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X72 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb6/G9 VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X73 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X74 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X75 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X76 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X77 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X78 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X79 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X80 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X81 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X82 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X83 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X84 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X85 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X86 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X87 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X88 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X89 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X90 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X91 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X92 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X93 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X94 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X95 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X96 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X97 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X98 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X99 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X100 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X101 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X102 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.45 pd=10.58 as=0.725 ps=5.29 w=5 l=0.5
+X103 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=1.45 ps=10.58 w=5 l=0.5
+X104 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X105 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X106 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X107 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X108 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X109 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X110 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X111 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X112 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X113 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X114 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X115 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X116 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X117 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X118 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X119 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X120 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X121 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X122 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X123 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X124 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X125 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X126 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X127 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X128 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X129 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X130 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X131 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X132 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X133 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X134 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X135 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X136 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X137 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X138 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X139 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X140 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X141 VDPWR ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X142 ldo_chip_0/Mb1/B ldo_chip_0/Mb6/G9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.725 pd=5.29 as=0.725 ps=5.29 w=5 l=0.5
+X143 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X144 ldo_chip_0/M4/D ldo_chip_0/RZ/R1 sky130_fd_pr__cap_mim_m3_1 l=25 w=20
+X145 fbtop_x ldo_chip_0/M2/G1 VGND sky130_fd_pr__res_xhigh_po_0p35 l=35
+X146 VGND ldo_chip_0/M2/G1 VGND sky130_fd_pr__res_xhigh_po_0p35 l=52.5
+X147 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X148 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X149 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X150 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X151 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X152 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X153 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X154 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X155 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X156 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X157 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X158 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X159 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X160 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X161 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X162 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X163 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X164 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X165 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X166 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X167 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X168 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X169 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X170 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=1.55 ps=10.62 w=5 l=0.15
+X171 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X172 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X173 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X174 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X175 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X176 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.55 pd=10.62 as=0.825 ps=5.33 w=5 l=0.15
+X177 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X178 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X179 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X180 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X181 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X182 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X183 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X184 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X185 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X186 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X187 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X188 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X189 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X190 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X191 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X192 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X193 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X194 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X195 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X196 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X197 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X198 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X199 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X200 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X201 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X202 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X203 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X204 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X205 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X206 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X207 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X208 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X209 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X210 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X211 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=1.55 ps=10.62 w=5 l=0.15
+X212 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X213 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X214 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X215 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X216 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X217 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X218 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X219 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X220 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X221 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X222 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X223 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X224 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X225 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X226 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X227 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X228 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X229 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X230 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X231 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X232 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X233 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X234 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X235 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X236 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X237 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X238 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X239 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X240 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X241 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X242 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X243 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X244 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X245 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X246 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X247 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X248 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X249 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X250 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X251 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X252 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X253 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X254 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X255 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X256 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X257 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X258 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X259 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X260 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X261 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X262 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X263 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X264 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X265 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X266 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X267 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X268 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.55 pd=10.62 as=0.825 ps=5.33 w=5 l=0.15
+X269 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X270 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X271 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X272 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X273 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X274 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X275 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X276 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X277 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X278 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X279 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X280 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X281 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X282 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X283 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X284 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X285 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X286 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X287 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X288 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X289 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X290 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X291 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X292 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X293 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X294 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X295 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X296 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X297 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X298 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X299 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X300 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X301 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=1.55 ps=10.62 w=5 l=0.15
+X302 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X303 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X304 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X305 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X306 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X307 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X308 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X309 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X310 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X311 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X312 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.55 pd=10.62 as=0.825 ps=5.33 w=5 l=0.15
+X313 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X314 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X315 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X316 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X317 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X318 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X319 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X320 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X321 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X322 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X323 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X324 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X325 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X326 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X327 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X328 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X329 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X330 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X331 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X332 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X333 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X334 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X335 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X336 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X337 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X338 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X339 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X340 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X341 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X342 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X343 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X344 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X345 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X346 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X347 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X348 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X349 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X350 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=1.55 ps=10.62 w=5 l=0.15
+X351 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X352 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X353 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X354 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X355 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X356 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X357 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X358 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X359 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X360 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X361 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X362 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X363 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X364 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X365 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X366 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X367 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X368 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X369 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X370 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X371 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X372 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X373 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X374 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X375 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X376 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X377 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X378 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X379 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X380 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X381 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X382 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X383 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X384 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X385 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X386 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X387 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X388 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X389 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X390 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X391 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X392 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X393 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X394 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X395 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X396 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X397 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X398 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X399 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X400 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X401 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X402 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X403 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X404 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X405 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X406 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X407 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X408 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X409 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X410 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X411 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X412 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X413 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X414 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X415 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X416 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X417 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X418 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X419 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X420 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.55 pd=10.62 as=0.825 ps=5.33 w=5 l=0.15
+X421 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X422 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X423 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X424 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X425 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X426 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X427 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X428 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X429 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X430 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X431 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X432 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X433 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X434 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X435 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X436 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X437 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X438 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X439 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X440 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X441 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X442 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X443 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X444 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X445 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X446 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X447 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X448 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X449 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X450 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X451 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X452 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X453 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X454 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X455 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X456 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X457 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X458 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X459 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X460 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X461 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X462 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X463 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X464 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X465 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X466 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X467 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X468 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X469 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X470 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X471 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X472 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X473 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X474 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X475 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X476 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X477 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X478 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X479 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X480 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X481 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X482 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X483 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X484 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X485 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X486 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X487 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X488 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X489 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X490 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X491 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X492 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X493 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X494 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X495 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X496 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X497 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X498 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X499 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X500 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=1.55 ps=10.62 w=5 l=0.15
+X501 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X502 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X503 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X504 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X505 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X506 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X507 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X508 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X509 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X510 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X511 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X512 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X513 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X514 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X515 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X516 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X517 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X518 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X519 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X520 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X521 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X522 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X523 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X524 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X525 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X526 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X527 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X528 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X529 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X530 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.55 pd=10.62 as=0.825 ps=5.33 w=5 l=0.15
+X531 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X532 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X533 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X534 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X535 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X536 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X537 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X538 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X539 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X540 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X541 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X542 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X543 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X544 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X545 VDPWR ldo_chip_0/Mb1/B ua[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+X546 ua[2] ldo_chip_0/Mb1/B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.825 pd=5.33 as=0.825 ps=5.33 w=5 l=0.15
+C0 ldo_chip_0/Msw/D4 VDPWR 0.1357f
+C1 ui_in[2] ui_in[3] 0.03102f
+C2 ua[1] ua[2] 0.31653f
+C3 ua[0] ua[2] 5.66766f
+C4 ldo_chip_0/M2/G1 ua[2] 0.14827f
+C5 ldo_chip_0/RZ/R2 ldo_chip_0/Mb1/B 5.0595f
+C6 ui_in[0] ua[2] 0.05004f
+C7 ldo_chip_0/RZ/R1 VDPWR 5.15104f
+C8 uio_in[0] ui_in[7] 0.03102f
+C9 ui_in[0] VDPWR 6.21609f
+C10 ua[2] ldo_chip_0/M4/D 0.47994f
+C11 ui_in[0] rst_n 0.03365f
+C12 ui_in[0] ldo_chip_0/Msw/D4 1.51657f
+C13 ui_in[3] ui_in[4] 0.03102f
+C14 VDPWR ldo_chip_0/RZ/R2 8.4326f
+C15 clk rst_n 0.03102f
+C16 ua[1] ldo_chip_0/Mb3/D 1.34324f
+C17 VDPWR ldo_chip_0/M4/D 13.3329f
+C18 ui_in[0] ui_in[1] 0.03102f
+C19 ui_in[0] ldo_chip_0/RZ/R1 5.72931f
+C20 ldo_chip_0/M4/G VDPWR 2.253f
+C21 ua[0] ua[1] 0.00655f
+C22 ui_in[4] ui_in[5] 0.03102f
+C23 ldo_chip_0/M2/G1 ua[0] 0.28967f
+C24 ua[1] ui_in[0] 0
+C25 ldo_chip_0/Mb6/G9 ldo_chip_0/Mb1/B 12.66537f
+C26 ldo_chip_0/RZ/R1 ldo_chip_0/RZ/R2 0.04719f
+C27 ldo_chip_0/Mb3/D ldo_chip_0/RZ/R2 2.32632f
+C28 ldo_chip_0/RZ/R1 ldo_chip_0/M4/D 0.99787p
+C29 ena clk 0.03102f
+C30 ua[1] ldo_chip_0/RZ/R2 3.81443f
+C31 ui_in[2] ui_in[1] 0.03102f
+C32 ua[0] ldo_chip_0/M4/D 0.04091f
+C33 ldo_chip_0/M2/G1 ldo_chip_0/M4/D 0.45537f
+C34 ui_in[0] ldo_chip_0/RZ/R2 0.912f
+C35 uio_in[0] uio_in[1] 0.03102f
+C36 ldo_chip_0/M4/G ua[1] 0
+C37 ui_in[5] ui_in[6] 0.03102f
+C38 ua[0] ldo_chip_0/M4/G 0.46629f
+C39 ldo_chip_0/M2/G1 ldo_chip_0/M4/G 0.00279f
+C40 ui_in[0] ldo_chip_0/M4/D 1.69464f
+C41 uio_in[4] uio_in[5] 0.03102f
+C42 uio_in[4] uio_in[3] 0.03102f
+C43 ldo_chip_0/M4/G ui_in[0] 0.23495f
+C44 VDPWR ldo_chip_0/Mb6/G9 30.06861f
+C45 ua[2] ldo_chip_0/Mb1/B 46.17955f
+C46 ldo_chip_0/M4/D ldo_chip_0/RZ/R2 2.88966f
+C47 ldo_chip_0/M4/G ldo_chip_0/M4/D 0.56263f
+C48 ldo_chip_0/M5/D ua[1] 0.48252f
+C49 ua[0] ldo_chip_0/M5/D 0.82542f
+C50 ui_in[6] ui_in[7] 0.03102f
+C51 ldo_chip_0/M2/G1 ldo_chip_0/M5/D 0.44546f
+C52 VDPWR ldo_chip_0/Mb1/B 0.11953p
+C53 uio_in[5] uio_in[6] 0.03102f
+C54 ldo_chip_0/Mb3/D ldo_chip_0/Mb6/G9 0.19776f
+C55 ldo_chip_0/Msw/D4 ldo_chip_0/Mb1/B 0.05277f
+C56 ua[1] ldo_chip_0/Mb6/G9 0.73437f
+C57 ua[2] VDPWR 0.3566p
+C58 uio_in[1] uio_in[2] 0.03102f
+C59 ui_in[0] ldo_chip_0/Mb6/G9 1.53055f
+C60 ldo_chip_0/M5/D ldo_chip_0/M4/D 1.0737f
+C61 uio_in[3] uio_in[2] 0.03102f
+C62 ldo_chip_0/Mb3/D ldo_chip_0/Mb1/B 12.79034f
+C63 ldo_chip_0/M4/G ldo_chip_0/M5/D 1.14609f
+C64 uio_in[6] uio_in[7] 0.03102f
+C65 ua[1] ldo_chip_0/Mb1/B 0.45971f
+C66 ldo_chip_0/Msw/D4 ua[2] 0.15328f
+C67 ui_in[0] ldo_chip_0/Mb1/B 3.29224f
+C68 ua[3] VGND 0.14696f
+C69 ua[4] VGND 0.14696f
+C70 ua[5] VGND 0.14696f
+C71 ua[6] VGND 0.14696f
+C72 ua[7] VGND 0.14696f
+C73 ena VGND 0.07038f
+C74 clk VGND 0.04288f
+C75 rst_n VGND 0.04244f
+C76 ui_in[1] VGND 0.04288f
+C77 ui_in[2] VGND 0.04288f
+C78 ui_in[3] VGND 0.04288f
+C79 ui_in[4] VGND 0.04288f
+C80 ui_in[5] VGND 0.04288f
+C81 ui_in[6] VGND 0.04288f
+C82 ui_in[7] VGND 0.04288f
+C83 uio_in[0] VGND 0.04288f
+C84 uio_in[1] VGND 0.04288f
+C85 uio_in[2] VGND 0.04288f
+C86 uio_in[3] VGND 0.04288f
+C87 uio_in[4] VGND 0.04288f
+C88 uio_in[5] VGND 0.04288f
+C89 uio_in[6] VGND 0.04288f
+C90 uio_in[7] VGND 0.0739f
+C91 VDPWR VGND 0.25607p
+C92 ua[2] VGND 19.02963f
+C93 ldo_chip_0/Mb1/B VGND 31.40005f
+C94 ldo_chip_0/Mb6/G9 VGND 7.64304f
+C95 ldo_chip_0/RZ/R1 VGND 0.20978p
+C96 ldo_chip_0/Mb3/D VGND 15.00314f
+C97 ldo_chip_0/RZ/R2 VGND 8.74045f
+C98 ua[1] VGND 19.28788f
+C99 ldo_chip_0/M5/D VGND 1.67981f
+C100 ldo_chip_0/M4/D VGND 37.15303f
+C101 ldo_chip_0/M2/G1 VGND 3.14598f
+C102 ldo_chip_0/M4/G VGND 2.67267f
+C103 ua[0] VGND 6.17613f
+C104 ldo_chip_0/Msw/D4 VGND 4.96571f
+C105 ui_in[0] VGND 5.629f
+.ends

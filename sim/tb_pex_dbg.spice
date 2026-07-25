@@ -1,0 +1,35 @@
+* tb_pex_tt - loop gain, C-extracted DUT, tt, 100u/100p
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/designs/ldo_project/layout/ldo_pex_brk.spice
+
+Vdd  vdd 0 1.8
+Ib   vdd vbias 10u
+Vref vref 0 0.9
+Vlen load_en 0 0
+X1 vref vbias vldo load_en vdd 0 fbtop_x ldo_pex_brk
+CL  vldo 0 100p
+IL  vldo 0 100u
+L3  vldo fbtop_x 1G
+Cinj fbtop_x nin 1G
+Vin nin 0 0 ac 1
+
+.nodeset v(vldo)=1.5 v(fbtop_x)=1.5
+.op
+.ac dec 20 1 1G
+
+.control
+run
+setplot op1
+print v(vldo) v(fbtop_x) v(vbias) v(vref) v(vdd) i(vdd)
+setplot ac1
+let t    = v(vldo)/v(fbtop_x)
+let t_db = db(t)
+let t_ph = 180/pi*cph(t)
+meas ac t0    find t_db at=1
+meas ac fu    when t_db=0 cross=1
+meas ac ph_fu find t_ph when t_db=0 cross=1
+meas ac floor find t_db at=800meg
+set hcopydevtype=svg
+hardcopy bode_pex_tt_100u.svg t_db t_ph
+.endc
+.end
