@@ -1,4 +1,5 @@
 # tt-ota-sky130 — TinyLDO
+[![gds](https://github.com/OGggggish/tt-ota-sky130/actions/workflows/gds.yaml/badge.svg)](https://github.com/OGggggish/tt-ota-sky130/actions/workflows/gds.yaml)
 
 A fully analog, **capless 1.5 V low-dropout regulator** on SKY130, designed for Tiny Tapeout **TTSKY26c**. Two-stage Miller OTA → super-source-follower buffer → 2 mm-wide segmented PMOS pass device, with on-chip bias generation, feedback divider, RC compensation, and a built-in switched-load demo. **16 transistors, 6 passives, zero digital gates.**
 
