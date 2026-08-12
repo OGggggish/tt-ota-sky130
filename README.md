@@ -93,4 +93,4 @@ Loop gain is measured by breaking the loop at the top of Rf1 and injecting throu
 
 ## Acknowledgments
 
-Thanks to the Tiny Tapeout team — in particular for the "split the FET" guidance on the LU.3 question — and to the maintainers of magic, xschem, ngspice, netgen, KLayout, and IIC-OSIC-TOOLS.
+Thanks to the Tiny Tapeout team — in particular for the "split the FET" guidance on the LU.3 question — and to the maintainers of magic, xschem, ngspice, netgen, KLayout, and IIC-OSIC-TOOLS.Thanks also to Prof. Hossein Naghavi, whose EE 333 course laid the analog foundations for this design, and whose encouragement helped it reach silicon. 
