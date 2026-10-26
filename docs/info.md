@@ -28,11 +28,11 @@ Load-step demo: driving `ui_in[0]` high turns on an on-chip switch (Msw, 30/0.5 
 | Phase margin, ff −40 °C | 73.7° | 70.7° |
 | Unity-gain frequency (tt) | 2.19 MHz | 2.04 MHz |
 | DC loop gain (tt) | 84.2 dB | 84.8 dB |
-| Load-step droop (0.1 → ~2.8 mA) | −308 mV | −328 mV |
+| Load-step droop (0.1 → ~2.8 mA) | −325 mV | −343 mV |
 | Regulation point | 1.500 V | 1.5008 V (light and heavy load) |
 | Dropout (pre-layout) | 14.8 mV @ 1.1 mA | — |
 
-All corners clear the ≥45° stability floor with ≥6.8° to spare; the layout parasitic cost is a uniform 3.0–3.6° of phase margin across corners. Droop is quoted from a 0.1 mA bench baseline; with only the µA-scale divider load the dip is slightly deeper. The layout is DRC-clean — **Tiny Tapeout precheck: 15/15 checks green** — and LVS-clean (netgen: *Circuits match uniquely*). Bode and load-step plots are shown in the repository README; the full set lives in `sim/`.
+All corners clear the ≥45° stability floor with ≥6.8° to spare; the layout parasitic cost is a uniform 3.0–3.6° of phase margin across corners. Droop is quoted from a 0.1 mA bench baseline, simulated with a 2 ns maximum timestep; with only the µA-scale divider load the dip is slightly deeper. The layout is DRC-clean — **Tiny Tapeout precheck: 15/15 checks green** — and LVS-clean (netgen: *Circuits match uniquely*). Bode and load-step plots are shown in the repository README; the full set lives in `sim/`.
 
 ## How to test
 
@@ -40,7 +40,7 @@ All corners clear the ≥45° stability floor with ≥6.8° to spare; the layout
 2. Apply **0.9 V** to `ua[0]` (reference input, high-impedance).
 3. Feed **10 µA into `ua[1]`** — this pin looks into a diode-connected NMOS sitting at ~0.7 V, so a ≈110 kΩ resistor from the 1.8 V rail works as a simple current source.
 4. Observe **1.5 V on `ua[2]`** (regulated output / sense). No output capacitor is needed; transient figures assume ~100 pF of board/probe parasitics on this node.
-5. Toggle `ui_in[0]` high to engage the on-chip switched load; a scope on `ua[2]` shows a ~0.33 V droop with full recovery to 1.5 V.
+5. Toggle `ui_in[0]` high to engage the on-chip switched load; a scope on `ua[2]` shows a ~0.34 V droop with full recovery to 1.5 V.
 6. Leave `ua[3..7]` unconnected. All digital outputs of the tile are tied to ground internally.
 
 ## External hardware
