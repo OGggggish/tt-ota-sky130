@@ -29,6 +29,9 @@ meas ac fu    when t_db=0 cross=1
 meas ac ph_fu find t_ph when t_db=0 cross=1
 meas ac floor find t_db at=800meg
 set hcopydevtype=svg
-hardcopy bode_pex_tt_100u.svg t_db t_ph
+set color0=white
+set color1=black
+set svg_intopts = ( 1024 768 18 0 1 2 0 )
+hardcopy bode_pex_tt_100u.svg t_db t_ph xlimit 1 100meg ylimit -200 200
 .endc
 .end

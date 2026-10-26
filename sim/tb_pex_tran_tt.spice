@@ -12,7 +12,7 @@ IL  vldo 0 100u
 
 .option rshunt=1e12 noopiter
 .nodeset v(vldo)=1.5
-.tran 50n 60u
+.tran 2n 60u 0 2n
 
 .control
 run
@@ -20,6 +20,9 @@ meas tran vpre   avg v(vldo) from=15u to=19u
 meas tran vmin   min v(vldo) from=19u to=30u
 meas tran vfinal avg v(vldo) from=50u to=60u
 set hcopydevtype=svg
-hardcopy tran_step_pex_tt.svg v(vldo)
+set color0=white
+set color1=black
+set svg_intopts = ( 1024 768 18 0 1 2 0 )
+hardcopy tran_step_pex_tt.svg v(vldo) xlimit 19.8u 20.8u
 .endc
 .end
