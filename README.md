@@ -36,7 +36,7 @@ All "post-layout" numbers are from the C-extracted netlist (magic PEX, ngspice-4
 
 **Loop gain and phase — post-layout, tt corner** (crossover ≈ 2 MHz, PM = 59.6°):
 
-![Bode, post-layout tt](docs/bode_pex_tt.png)
+![Bode, post-layout tt](sim/bode_pex_tt_100u.svg)
 
 **Worst corner — ss, 125 °C** (PM = 51.8°, still clear of the 45° floor):
 
@@ -44,7 +44,7 @@ All "post-layout" numbers are from the C-extracted netlist (magic PEX, ngspice-4
 
 **Load-step transient, 0.1 → ~2.8 mA** (droop −343 mV, full recovery to 1.5008 V):
 
-![Load-step droop](docs/load_step_pex_tt.png)
+![Load-step droop](sim/tran_step_pex_tt.svg)
 
 The transient bench now uses a 2 ns maximum timestep. An earlier run at 50 ns reported −328 mV because it stepped over the minimum; reruns at 2 ns and 0.5 ns both give −343 mV.
 
