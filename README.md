@@ -24,9 +24,9 @@ All "post-layout" numbers are from the C-extracted netlist (magic PEX, ngspice-4
 | Unity-gain frequency | 2.04 MHz | post-layout, tt |
 | Phase margin | **59.6° / 51.8° / 70.7°** | tt 27 °C / ss 125 °C / ff −40 °C, post-layout |
 | Stability floor | ≥ 45° all corners | worst-case margin 6.8° |
-| Load-step droop | **−328 mV**, full recovery | 0.1 → ~2.8 mA, C_L = 100 pF |
+| Load-step droop | **−343 mV**, full recovery | 0.1 → ~2.8 mA, 200 ns edge, C_L = 100 pF, 2 ns max timestep |
 | Output capacitor | **none required (capless)** | transients quoted at ~100 pF board/probe parasitics |
-| Recovery behaviour | bottoms out ~180 ns after the step | returns to 1.5008 V |
+| Recovery behaviour | bottoms out 163 ns after the step starts, back within 1 mV by ~550 ns, no ringing | returns to 1.5008 V |
 | Compensation | 22 × `cap_mim_m3_1` + zero-cancelling RZ | Miller, across 2nd stage |
 | Pass device | 2000 µm / 0.15 µm PMOS, two guard-ringed segments | 1200 + 800 µm in parallel |
 
@@ -36,15 +36,17 @@ All "post-layout" numbers are from the C-extracted netlist (magic PEX, ngspice-4
 
 **Loop gain and phase — post-layout, tt corner** (crossover ≈ 2 MHz, PM = 59.6°):
 
-![Bode, post-layout tt](sim/bode_pex_tt_100u.svg)
+![Bode, post-layout tt](docs/bode_pex_tt.png)
 
 **Worst corner — ss, 125 °C** (PM = 51.8°, still clear of the 45° floor):
 
 ![Bode, post-layout ss 125 °C](sim/bode_pex_ss125_100u.svg)
 
-**Load-step transient, 0.1 → ~2.8 mA** (droop −328 mV, full recovery to 1.5008 V):
+**Load-step transient, 0.1 → ~2.8 mA** (droop −343 mV, full recovery to 1.5008 V):
 
-![Load-step droop](sim/tran_step_pex_tt.svg)
+![Load-step droop](docs/load_step_pex_tt.png)
+
+The transient bench now uses a 2 ns maximum timestep. An earlier run at 50 ns reported −328 mV because it stepped over the minimum; reruns at 2 ns and 0.5 ns both give −343 mV.
 
 ## Pinout
 
